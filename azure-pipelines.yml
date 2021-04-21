@@ -41,6 +41,6 @@ steps:
     arguments: --no-build --configuration Release --output $(Build.ArtifactStagingDirectory)/Release
     zipAfterPublish: true
 - task: PublishBuildArtifacts@1
-  artifactName: mikeGameTailSpin
   displayName: 'Publish Artifact: drop'
+  artifactName: mikeGameTailSpin
   condition: succeeded()
