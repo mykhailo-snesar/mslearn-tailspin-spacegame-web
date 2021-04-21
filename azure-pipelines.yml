@@ -42,5 +42,6 @@ steps:
     zipAfterPublish: true
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
-  artifactName: mikeGameTailSpin
   condition: succeeded()
+  inputs:
+    artifactName: mikeGameTailSpin
